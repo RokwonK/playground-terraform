@@ -23,34 +23,44 @@ Terraform은 IaC(Infra as Code) 도구이며 여러 클라우드 플랫폼에서
 ### **🤔 init**
 Terraform이 동작할 working Directory를 지정하는 명령어(해당 디렉터리에서는 .tf 파일을 읽을 수 있도록)  
 명령어 입력시 `.terraform`, `.terraform.lock.hcl` 파일이 생성됨
-> terraform init
+```shell
+terraform init
+```
 
 <br />
 
 ### **🤔 plan**
 실제 자원을 생성하기 전에 어떤 자원들이 생성/수정/삭제 될 것인지를 알아볼 수 있는 미리보기 기능
-> terraform plan
+```shell
+terraform plan
+```
 
 <br />
 
 ### **🤔 apply**
 terraform 코드를 작성 후 코드에 맞추어 실제로 자원을 생성/수정/삭제를 해주는 명령어.  
 생성 후에는 `terraform.tfstate`파일이 만들어짐.
-> terraform apply
+```shell
+terraform apply
+```
 
 
 <br />
 
 ### **🤔 destroy**
 생성되어 있는 자원을 삭제해주는 명령어.
-> terraform destroy
+```shell
+terraform destroy
+```
 
 <br />
 
 ### **🤔 import**
 인프라(aws)에 배포되어 있는 자원을 terrform state로 옮겨주는 명령어.  
 하지만 `~.tf`을 생성해주진 않음 `terrform plan`을 통해 바뀌는 정보를 확인한 후에 직접 tf 파일을 생성하여 싱크를 맞추어 줘야함.
-> terraform import
+```shell
+terraform import
+```
 
 
 <br />
